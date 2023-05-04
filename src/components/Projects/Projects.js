@@ -1,16 +1,70 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import ProjectCard from "./ProjectCards";
-
-import PrivateChat from "../../Assets/Projects/PrivateChat.png";
-import Portfolio from "../../Assets/Projects/Portfolio.png";
-import Ecart from "../../Assets/Projects/ecart.png";
-import ExpenseTracker from "../../Assets/Projects/ExpenseTracker.png";
 
 import "./project.css";
 
 function Projects() {
+  const projectList = [
+    {
+      title: "Covid-Pneumonia-Classication",
+      description:
+        "I have designed an Imagenet Classification model using Keras and Tensorflow and Convolutional Neural network.",
+      githubLink:
+        "https://github.com/subhomoy-roy-choudhury/Covid-Pneumonia-Classication",
+      imgPath:
+        "https://socialify.git.ci/subhomoy-roy-choudhury/Covid-Pneumonia-Classication/image?language=1&owner=1&name=1&stargazers=1&theme=Light",
+      demoLink: null,
+    },
+    {
+      title: "Hack_IP",
+      description:
+        "This is a Command Line Tool that is used to track IP addresses and also to retrieve the system information.",
+      githubLink: "https://github.com/subhomoy-roy-choudhury/Hack_IP",
+      imgPath:
+        "https://socialify.git.ci/subhomoy-roy-choudhury/Hack_IP/image?language=1&owner=1&name=1&stargazers=1&theme=Light",
+      demoLink: null,
+    },
+    {
+      title: "Research Paper Finder",
+      description:
+        "This is a command-line tool to extract research paper details along with their download links with the help of keywords",
+      githubLink:
+        "https://github.com/subhomoy-roy-choudhury/Research_Paper_Finder",
+      imgPath:
+        "https://socialify.git.ci/subhomoy-roy-choudhury/Research_Paper_Finder/image?language=1&owner=1&name=1&stargazers=1&theme=Light",
+      demoLink: null,
+    },
+    {
+      title: "local-software-development-toolkit",
+      description:
+        "local setup for MongoDb, Solr, PostgreSQL, pgAdmin etc using Docker, Python and Go",
+      githubLink:
+        "https://github.com/subhomoy-roy-choudhury/local-software-development-toolkit",
+      imgPath:
+        "https://socialify.git.ci/subhomoy-roy-choudhury/local-software-development-toolkit/image?language=1&owner=1&name=1&stargazers=1&theme=Light",
+      demoLink: null,
+    },
+    {
+      title: "SSH Manager",
+      description: "Toolkit to manage ssh connection using bash",
+      githubLink: "https://github.com/subhomoy-roy-choudhury/SSH-Manager",
+      imgPath:
+        "https://socialify.git.ci/subhomoy-roy-choudhury/SSH-Manager/image?language=1&owner=1&name=1&stargazers=1&theme=Light",
+      demoLink: null,
+    },
+    {
+      title: "Family Tree Generator",
+      description:
+        "CLI Tool for adding family members and get the relation between them",
+      githubLink:
+        "https://github.com/subhomoy-roy-choudhury/Family-Tree-Generator",
+      imgPath:
+        "https://socialify.git.ci/subhomoy-roy-choudhury/Family-Tree-Generator/image?language=1&owner=1&name=1&stargazers=1&theme=Light",
+      demoLink: null,
+    },
+  ];
   return (
     <Container fluid className="project-section">
       <Container>
@@ -19,45 +73,25 @@ function Projects() {
         </h1>
         <p>Here are a few projects I've worked on recently.</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={6} lg={4} className="project-card">
-            <ProjectCard
-              imgPath={Ecart}
-              title="E Cart"
-              description="This is a fully functional eCommerce website that uses React.js + MUI and CSS in the front end and NodeJs and express js in backend and MongoDb as Database."
-              ghLink="https://github.com/rahuljha4171/E-cart"
-              demoLink="https://ecart.onrender.com/"
-            />
-          </Col>
-
-          <Col md={6} lg={4} className="project-card">
-            <ProjectCard
-              imgPath={Portfolio}
-              title="Portfolio Website"
-              description="My personal Portfolio Website build with React and Bootstrap. It is fully responsive website which supports both dark and light mode."
-              ghLink="https://github.com/rahuljha4171/Portfolio-Website"
-              demoLink="https://rahuljha.tech/"
-            />
-          </Col>
-          <Col md={6} lg={4} className="project-card">
-            <ProjectCard
-              imgPath={PrivateChat}
-              title="Private Chat"
-              description="A Personal Chat Application to share resources and hangout with friends build with react.js, css, and Firebase. Have features which allows user for realtime messaging, image sharing and search user."
-              ghLink="#"
-              demoLink="https://chat-app-rahuljha4171.vercel.app/"
-            />
-          </Col>
-
-          <Col md={6} lg={4} className="project-card">
-            <ProjectCard
-              imgPath={ExpenseTracker}
-              title="Expense Tracker"
-              description="An online expense tracker using React, Node, Express, and MongoDB as the database. It allows you to keep track of your expenses, investments, and savings. All past transactions are listed, and you can also delete them. "
-              ghLink="https://github.com/rahuljha4171/Expense-Tracker"
-              demoLink="https://expense-tracker.rahuljha4171.vercel.app/"
-            />
-          </Col>
+          {projectList.map((item) => (
+            <Col md={6} lg={4} className="project-card">
+              <ProjectCard
+                imgPath={item.imgPath}
+                title={item.title}
+                description={item.description}
+                ghLink={item.githubLink}
+                demoLink={item.demoLink}
+              />
+            </Col>
+          ))}
         </Row>
+        <Button
+          href={"https://github.com/subhomoy-roy-choudhury"}
+          target="_blank"
+          style={{ marginLeft: "10px" }}
+        >
+          More Projects
+        </Button>
       </Container>
       <ScrollToTop />
     </Container>
