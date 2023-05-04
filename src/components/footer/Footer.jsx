@@ -10,6 +10,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 import "./footer.css";
 
 function Footer() {
+  const GithubProfileLink = "https://github.com/subhomoy-roy-choudhury";
+  const TwitterProfileLink = "https://twitter.com/tribrid2000";
+  const EmailID = "subhomoyrchoudhury@gmail.com";
+  const LinkedinProfileLink ="https://www.linkedin.com/in/subhomoy-roy-choudhury-70aab81a7/";
+
+
   return (
     <Container fluid className="footer">
       <Row>
@@ -17,7 +23,7 @@ function Footer() {
         <Col md="4" className="footer-copywright">
           <span>
             Designed and Developed by{" "}
-            <i className="primary-header">Rahul Jha</i>
+            <i className="primary-header">Subhomoy Roy Choudhury</i>
           </span>
         </Col>
         <Col md="4" className="footer-body">
@@ -26,7 +32,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="github"
-                href="https://github.com/Rahuljha4171"
+                href={GithubProfileLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="github"
@@ -38,7 +44,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="twitter"
-                href="https://twitter.com/Rahuljha4171"
+                href={TwitterProfileLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="twitter"
@@ -50,7 +56,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="email"
-                href="mailto:rahuljha4171@gmail.com"
+                href={`mailto:${EmailID}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="email"
@@ -62,7 +68,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="linkedin"
-                href="https://www.linkedin.com/in/Rahuljha4171/"
+                href={LinkedinProfileLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="linkedin"
@@ -70,7 +76,7 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
-            <li className="social-icons">
+            {/* <li className="social-icons">
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="instagram"
@@ -81,7 +87,7 @@ function Footer() {
               >
                 <AiFillInstagram />
               </a>
-            </li>
+            </li> */}
           </ul>
         </Col>
       </Row>

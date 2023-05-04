@@ -8,6 +8,7 @@ import Type from "./Type";
 import "./home.css";
 
 function Home() {
+  const Name = "Subhomoy Roy Choudhury"
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -23,7 +24,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                <strong className="main-name"> Rahul Jha</strong>
+                <strong className="main-name">{Name}</strong>
               </h1>
 
               <div style={{ padding: 30 }} className="type">

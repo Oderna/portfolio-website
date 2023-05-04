@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/Avatar.png";
+import myImg from "../../Assets/profile-img.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -11,6 +11,11 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
+  const GithubProfileLink = "https://github.com/subhomoy-roy-choudhury";
+  const TwitterProfileLink = "https://twitter.com/tribrid2000";
+  const EmailID = "subhomoyrchoudhury@gmail.com";
+  const LinkedinProfileLink ="https://www.linkedin.com/in/subhomoy-roy-choudhury-70aab81a7/";
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -46,12 +51,14 @@ function Home2() {
               here.
             </p>
           </Col>
+          {/* Avatar Image */}
           <Col md={4} className="myAvtar">
             <Tilt>
               <img
                 data-aos="fade-left"
                 src={myImg}
                 className="img-fluid"
+                id="avatar-image"
                 alt="avatar"
               />
             </Tilt>
@@ -66,7 +73,7 @@ function Home2() {
             <ul className="home-about-social-links" data-aos="fade-up">
               <li className="social-icons">
                 <a
-                  href="https://github.com/Rahuljha4171"
+                  href={GithubProfileLink}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,7 +84,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Rahuljha4171"
+                  href={TwitterProfileLink}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -88,7 +95,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="mailto:rahuljha4171@outlook.com"
+                  href={`mailto:${EmailID}`}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -99,7 +106,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/Rahuljha4171/"
+                  href={LinkedinProfileLink}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -108,7 +115,7 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons">
+              {/* <li className="social-icons">
                 <a
                   href="https://www.instagram.com/dead.programmer/"
                   target="_blank"
@@ -118,7 +125,7 @@ function Home2() {
                 >
                   <AiFillInstagram />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </Col>
         </Row>

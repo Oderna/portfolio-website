@@ -4,8 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import { ThemeContext } from "../../Context/theme";
 
 import Container from "react-bootstrap/Container";
-import logoLight from "../../Assets/logoLight.png";
-import logoDark from "../../Assets/logoDark.png";
 
 import { Link } from "react-router-dom";
 import "./navbar.css";
@@ -14,6 +12,8 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const [{ themename, toggeltheme }] = useContext(ThemeContext);
+
+  const Initials = "SRC"
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -45,12 +45,17 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img
+        <a href="/" class="logo">
+          <span class="grey-color"> &lt;</span>
+          <span class="logo-name">{Initials}</span>
+          <span class="grey-color">/&gt;</span>
+        </a>
+          {/* <img
             src={themename === "light" ? logoDark : logoLight}
             className="img-fluid logo"
             alt="brand"
             style={{width: "48", height: "40"}}
-          />
+          /> */}
         </Navbar.Brand>
 
         <Navbar.Toggle

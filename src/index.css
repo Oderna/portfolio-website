@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: "Agustina Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Agustina Regular"),
+    url("./Assets/fonts/Agustina.woff") format("woff");
+  font-display: swap;
+}
 body {
   margin: 0;
   font-family: "Roboto", serif !important;
@@ -10,3 +18,4 @@ body {
     hsla(153, 9%, 19%, 1) 100%
   );
 }
+

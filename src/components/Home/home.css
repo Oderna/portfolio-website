@@ -221,3 +221,14 @@
 .icon-colour {
   color: var(--clr-primary) !important;
 }
+
+#avatar-image{
+  border: 0.5rem solid var(--clr-primary);
+  border-radius: 50%;
+  box-shadow: 0 30px 30px -30px rgba(0,0,0,.1);
+  height: auto;
+  margin-left: auto;
+  max-width: 350px;
+  transition: all .3s ease-out;
+  width: 95%;
+}

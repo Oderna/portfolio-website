@@ -13,11 +13,28 @@ import {
   SiTailwindcss,
   SiRedux,
   SiMaterialui,
+  SiPython,
+  SiFastapi,
+  SiDjango,
+  SiSelenium,
+  SiDocker
 } from "react-icons/si";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPython />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDjango />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFastapi />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSelenium />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
@@ -47,6 +64,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiMaterialui />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker />
       </Col>
     </Row>
   );
