@@ -12,7 +12,7 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiRedux,
-  SiMaterialui,
+  SiMui,
   SiPython,
   SiFastapi,
   SiDjango,
@@ -63,7 +63,7 @@ function Techstack() {
         <SiRedux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMaterialui />
+        <SiMui />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiDocker />
