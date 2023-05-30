@@ -19,5 +19,19 @@
         "verifyLink": "http://givemycertificate/verify/2007002511000023",
         "type": "SkillUp",
         "fileType": "pdf"
+    },
+    {
+        "name": "Certificate",
+        "downloadLink": "https://raw.githubusercontent.com/subhomoy-roy-choudhury/Certificates/main/Code%20Worriors/MLM.png",
+        "verifyLink": "http://givemycertificate/verify/2007002511000023",
+        "type": "Code Worriors",
+        "fileType": "image"
+    },
+    {
+        "name": "Foundational Artificial Intelligance",
+        "downloadLink": "https://link.storjshare.io/s/juh6zhgoornwsajyr4kjhxf47x6a/certificates/Certificate.pdf?download=1",
+        "verifyLink": "http://givemycertificate/verify/2007002511000023",
+        "type": "SkillUp",
+        "fileType": "pdf"
     }
 ]
