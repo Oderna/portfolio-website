@@ -45,10 +45,10 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-        <a href="/" class="logo">
-          <span class="grey-color"> &lt;</span>
-          <span class="logo-name">{Initials}</span>
-          <span class="grey-color">/&gt;</span>
+        <a href="/" className="logo">
+          <span className="grey-color"> &lt;</span>
+          <span className="logo-name">{Initials}</span>
+          <span className="grey-color">/&gt;</span>
         </a>
           {/* <img
             src={themename === "light" ? logoDark : logoLight}
@@ -106,6 +106,16 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 Resume
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/achievements"
+                onClick={() => updateExpanded(false)}
+              >
+                Achievements
               </Nav.Link>
             </Nav.Item>
 

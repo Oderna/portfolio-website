@@ -1,0 +1,83 @@
+.certificates-section {
+    position: relative !important;
+    padding-top: 150px !important;
+    padding-bottom: 30px !important;
+    background-color: var(--clr-bg) !important;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+  }
+
+.certificates-img {
+    /* margin-top: 8px;
+    vertical-align: middle; */
+    /* width: 100%; */
+
+    /* width:100%;
+    height:auto;
+    margin: 4% auto;
+    box-shadow:-3px 5px 15px #000;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; */
+
+    /* Minimum width of 24rem and grow to fit available space */
+	flex: 0 0 30rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.certificates-img-1 {
+    width: 30rem;
+    
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    flex: 0 0 30rem;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+.image-container .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+.image-container:hover .content-overlay{
+    opacity: 1;
+}
+  
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .overlay-content .button{
+    border-radius: 2rem;
+    width: 10rem;
+  }
