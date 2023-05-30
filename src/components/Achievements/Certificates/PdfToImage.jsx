@@ -1,10 +1,8 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 
 import React, { useState, useEffect } from 'react';
-// import { Document, Page, pdfjs } from 'react-pdf';
-// import { StyleSheet } from '@react-pdf/renderer';
 
 import { pdfjs } from 'react-pdf';
-import { getPage } from 'pdfjs-dist/build/pdf';
 
 // import './pdf.css'
 

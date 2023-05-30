@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Container from 'react-bootstrap/Container';
-import IBM_AI_Engineering from "../../../Assets/certificates/IBM_AI_Engineering.png";
-import Data_Science_Math_Skills from "../../../Assets/certificates/Data_Science_Math_Skills.png";
 import ImageOverlay from './ImageOverlay';
 import CertificatesListJson from './CertificatesList.json';
 
@@ -11,11 +9,16 @@ export default function Certificates() {
     const CertificateList = CertificatesListJson
 
     return (
-        <Container fluid className="certificates-section">
+        <Container className="certificates-section">
+            <h1 className="certificate-heading">
+                My <strong className="Fluorescent-Blue">Certificates </strong>
+            </h1>
+            <p>Here are a few certificates that I've recieved.</p>
+            <Container fluid className="certificates-display">
             {
                 CertificateList.map((certificate) => (<ImageOverlay src={certificate.downloadLink} verifyLink={certificate.verifyLink} downloadLink={certificate.downloadLink} fileType={certificate.fileType} />))
             }
+            </Container>
         </Container>
-
     )
 };
