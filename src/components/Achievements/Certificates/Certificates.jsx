@@ -18,7 +18,7 @@ export default function Certificates() {
     const CertificateList = CertificatesListJson
 
     return (
-        <Container className="certificates-section">
+        <Container fluid className="certificates-section">
             <h1 className="certificate-heading">
                 My <strong className="Fluorescent-Blue">Certificates </strong>
             </h1>

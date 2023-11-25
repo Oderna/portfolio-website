@@ -11,6 +11,8 @@ import "swiper/css/pagination";
 // import required modules
 import { FreeMode, Pagination, Navigation } from "swiper";
 
+import './Badges.css';
+
 export default function Badges() {
     const BadgeList = [
         {
@@ -51,16 +53,17 @@ export default function Badges() {
         },
     ]
     return (
-        <Container className="badges-section">
+        <Container fluid className="badges-section">
             <h1 className="badges-heading">
                 My <strong className="Fluorescent-Blue">Badges </strong>
             </h1>
             <p>Here are a few badges that I've recieved.</p>
-            <Container>
+            <Container fluid className="swiper-carousel">
                 <Swiper
-                    slidesPerView={5}
+                    slidesPerView={3}
                     spaceBetween={5}
                     freeMode={true}
+                    loop
                     navigation={true}
                     modules={[FreeMode, Pagination, Navigation]}
                     className="mySwiper"

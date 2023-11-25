@@ -1,15 +1,15 @@
-.certificate-heading {
-  color: var(--clr-txt) !important;
-  font-size: 2.3em !important;
-  font-weight: 500 !important;
-  padding-top: 10px !important;
-}
-
 .certificates-section {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-color: var(--clr-bg) !important;
+}
+
+.certificate-heading {
+  color: var(--clr-txt) !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
 }
 
 .certificate-display {
@@ -23,18 +23,6 @@
 }
 
 .certificates-img {
-  /* margin-top: 8px;
-    vertical-align: middle; */
-  /* width: 100%; */
-
-  /* width:100%;
-    height:auto;
-    margin: 4% auto;
-    box-shadow:-3px 5px 15px #000;
-    cursor: pointer;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s; */
-
   /* Minimum width of 24rem and grow to fit available space */
   flex: 0 0 30rem;
   /* Margin value should be half of grid-gap value as margins on flex items don't collapse */

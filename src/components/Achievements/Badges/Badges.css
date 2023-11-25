@@ -1,13 +1,28 @@
+.badges-section {
+    position: relative !important;
+    padding-top: 150px !important;
+    padding-bottom: 30px !important;
+    /* padding-left: 200px;
+    padding-right: 200px; */
+    background-color: var(--clr-bg) !important;
+}
+
 .badges-heading {
     color: var(--clr-txt) !important;
     font-size: 2.3em !important;
     font-weight: 500 !important;
     padding-top: 10px !important;
 }
-  
-.badges-section {
-    position: relative !important;
-    padding-top: 150px !important;
-    padding-bottom: 30px !important;
-    background-color: var(--clr-bg) !important;
+
+.swiper-carousel {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.swiper-button-next{
+    right: var(--swiper-navigation-sides-offset,0px);
+}
+
+.swiper-button-prev{
+    left: var(--swiper-navigation-sides-offset,0px);
 }
