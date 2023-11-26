@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/footer/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import SocialMediaRedirect from "./components/SocialMediaRedirect/SocialMediaRedirect";
 import { ThemeContext } from "./Context/theme";
 import {
   BrowserRouter as Router,
@@ -16,6 +17,11 @@ import {
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+// Google Analytics
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-QPFGJ72L36");
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -41,6 +47,7 @@ function App() {
             <Route path="/project" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
+            <Route path="/link/:platform" element={<SocialMediaRedirect />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
           <Footer />
