@@ -21,7 +21,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Google Analytics
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-QPFGJ72L36");
+ReactGA.initialize(process.env.REACT_APP_GOOGLE_MEASUREMENT_ID);
 
 function App() {
   const [load, upadateLoad] = useState(true);
