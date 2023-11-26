@@ -33,10 +33,12 @@ jobs:
       # deploy application to netlify
       - name: Deploy production to Netlify
         uses: South-Paw/action-netlify-deploy@v1.2.0
+        env:
+          REACT_APP_GOOGLE_MEASUREMENT_ID: ${{ secrets.REACT_APP_GOOGLE_MEASUREMENT_ID}}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-          REACT_APP_GOOGLE_MEASUREMENT_ID: ${{ secrets.REACT_APP_GOOGLE_MEASUREMENT_ID}}
+
           build-dir: "./build"
           comment-on-commit: true
